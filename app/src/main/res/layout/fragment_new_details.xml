@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.info.NewDetailsFragment">
+
+    <ImageView
+        android:id="@+id/action_image"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:alpha="1"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <eightbitlab.com.blurview.BlurView
+            android:id="@+id/blur"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:blurOverlayColor="#16FFFFFF">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent">
+
+                <ImageView
+                    android:paddingStart="5dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_back_ios"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </eightbitlab.com.blurview.BlurView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:background="@drawable/text_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <TextView
+            android:id="@+id/description"
+            android:textSize="20sp"
+            android:ellipsize="end"
+            android:paddingTop="80dp"
+            android:paddingHorizontal="15dp"
+            android:text="LONDON — Cryptocurrencies “have no intrinsic value” and people who invest in them should be prepared to lose all their money, Bank of England Governor Andrew Bailey said.
+
+Digital currencies like bitcoin, ether and even dogecoin have been on a tear this year, reminding some investors of the 2017 crypto bubble in which bitcoin blasted toward $20,000, only to sink as low as $3,122 a year later.
+
+Asked at a press conference Thursday about the rising value of cryptocurrencies, Bailey said: “They have no intrinsic value. That doesn’t mean to say people don’t put value on them, because they can have extrinsic value. But they have no intrinsic value.”
+
+“I’m going to say this very bluntly again,” he added. “Buy them only if you’re prepared to lose all your money.”
+
+Bailey’s comments echoed a similar warning from the U.K.’s Financial Conduct Authority.
+
+“Investing in cryptoassets, or investments and lending linked to them, generally involves taking very high risks with investors’ money,” the financial services watchdog said in January.
+
+“If consumers invest in these types of product, they should be prepared to lose all their money.”
+
+Bailey, who was formerly the chief executive of the FCA, has long been a skeptic of crypto. In 2017, he warned: “If you want to invest in bitcoin, be prepared to lose all your money.”"
+            android:textColor="@color/black"
+            app:layout_constraintVertical_bias="0.95"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="160dp"
+        android:alpha="1"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintVertical_bias="0.39"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <eightbitlab.com.blurview.BlurView
+            android:id="@+id/blurView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:blurOverlayColor="#16FFFFFF">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="22dp"
+                    android:text="Sunday, 9 May 2021"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:maxLines="3"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:layout_marginTop="10dp"
+                    android:text="Crypto investors should be prepared to lose all their money, BOE governor says"
+                    app:layout_constraintTop_toBottomOf="@id/date"
+                    app:layout_constraintStart_toStartOf="@id/date"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="12dp"
+                    android:text="Published by Ryan Browne"
+                    app:layout_constraintTop_toBottomOf="@id/title"
+                    app:layout_constraintStart_toStartOf="@id/date"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </eightbitlab.com.blurview.BlurView>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_like"
+        app:fabCustomSize="60dp"
+        app:maxImageSize="25dp"
+        android:src="@drawable/dislike"
+        android:backgroundTint="#F3F2F2"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
